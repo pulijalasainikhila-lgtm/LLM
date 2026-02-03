@@ -50,5 +50,9 @@ Token Embedddings:
 Token embeddings are matrices of size (vocab_size, dimensions). Each token in the vocabulary will be corresponding to an array of n dimensions and all the weights in the matrix are randomly generated. The torch library in python gives an embedding matrix which acts like a lookup matrix.
 
 Positional Encoding:
+This is important to inject details related to position into vector embeddings. There are two types of positional encodings: adsolute and relative. They have the same dimension as the vector embeddings.
+In Absolute PE, for each position in input sequence, a unique embedding is added to the tokens' embedding to convey it's exact location.
+In Relative PE, the emphasis is on the distance between tokens
 
+Attention mechanism:
 
